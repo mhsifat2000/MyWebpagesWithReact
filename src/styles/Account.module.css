@@ -1,19 +1,22 @@
- .account{
-     position:absolute;
-     top:20px;
-     right: 30px;
-}
 
 .account {
-  width: 50%;
+  width: 100%;
   display: flex;
   gap: 0.5rem;
-  justify-content: flex-end;
+  justify-content:center;
   align-items: center;
-  margin-right: 30px;
+  background: var(--background-color);
   font-size: 12px;
+  
 }
-
+.link{
+  text-decoration: none;
+  color: var( --icon-fill);
+  font-size: 1rem;
+}
+.link:hover{
+  color: var( --icon-fill-hover);
+}
 .account > span:last-child {
   cursor: pointer;
 }

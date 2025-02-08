@@ -9,6 +9,28 @@
      border-bottom:10px #2beaff solid;
      z-index:9999;
      width: 100%;
+     display: grid;
+     grid-template-rows: 4fr 3fr;
+}
+.part1{
+     
+     display: grid;
+     grid-template-columns: 4fr 1fr;
+     
+}
+.accoutCenter{
+    
+     position: relative;
+     display: grid;
+     grid-template-rows: 1fr 1fr;
+}
+.TheamSwiche{
+     transform: scale(0.4);
+}
+
+.part2{
+     
+     /* position: relative; */
 }
 .branding{
     margin:0px;
@@ -50,51 +72,66 @@
 }
 
 @media (max-width: 768px){
+     .header{
+          position: sticky ;
+          min-height: 200px;
+          display: grid;
+          grid-template-rows: 1fr 3fr;
+     }
+     .part1{
+     }
      .branding{
         
-        font-size:30px;
-        color:white;
-        display: inline-block;
-        font-size: 1.7rem;
-        padding:10px;
-    }
-    .navigation {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: auto;
-        min-width: 80%;
-        position: absolute;
-        top: 60px;
-        right: 10%;       
-    }
+          font-size:30px;
+          color:rgb(255, 255, 255);
+          display: inline-block;
+          font-size: 1.rem;
+          padding:30px;
+      }
+     .part2{
+          
+          position: relative;
+     }
+     .navigation {
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          height: auto;
+          min-width: 80%;
+          position: absolute;
+          top: 60px;
+          right: 10%;  
+         
+     }
+  
+     .btn{
+           position: relative;
+           height:25px ;
+           width: 100%;
+           border:2px solid #00769c;
+           border-radius:8px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin: 5px;
+     }
+     .btn:hover{
+          transition-timing-function: ease-in-out;
+          transition-duration: 0.4s;
+          transform: scale(.9);
+     }
+     .btn a{
+          position: absolute;
+          color:#ffffff;
+          text-decoration:none;
+          text-transform: uppercase;
+          font-size:15px;
+          padding: 5px;     
+     }
 
-    .btn{
-         position: relative;
-         height:25px ;
-         width: 100%;
-         border:2px solid #00769c;
-         border-radius:8px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         margin: 5px;
-}
-    .btn:hover{
-         transition-timing-function: ease-in-out;
-         transition-duration: 0.4s;
-         transform: scale(.9);
-}
-    .btn a{
-         position: absolute;
-         color:#ffffff;
-         text-decoration:none;
-         text-transform: uppercase;
-         font-size:15px;
-         padding: 5px;     
-}
-.header{
-    position: sticky ;
-    min-height: 200px;
-}
+     
+     
+    
+    
+      
 }

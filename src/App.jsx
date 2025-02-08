@@ -19,12 +19,12 @@ function App() {
         <Routes>
            <Route path="/" element={<HomePage/>} />
            <Route path="/logIn" element={<LogInPage/>}/>
-           <Route path="/*" element={<ProtectedRoute/>}>
-             <Route path="photographer" element={<Photographer/>}/>
-             <Route path="MenuPage" element={<MenuPage/>}/>
-             <Route path="portfoliopage" element={<PortfolioPage/>}/>
-              <Route path="ImagePage" element={<ImagePage/>}/>
-           </Route>
+           {/* <Route path="/*" element={<ProtectedRoute/>}> */}
+             <Route path="/photographer" element={<Photographer/>}/>
+             <Route path="/MenuPage" element={<MenuPage/>}/>
+             <Route path="/portfoliopage" element={<PortfolioPage/>}/>
+             <Route path="/ImagePage" element={<ImagePage/>}/>
+           {/* </Route> */}
         </Routes>
       </Layout>
       </AuthProvider>

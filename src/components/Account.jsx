@@ -23,8 +23,8 @@ export default function Account() {
         </>
       ) : (
         <>
-          <Link to="/signup">Signup</Link>
-          <Link to="/login">Login</Link>
+          <Link to="/signup" className={classes.link}>Signup</Link>
+          <Link to="/login" className={classes.link}>Login</Link>
         </>
       )}
     </div>
